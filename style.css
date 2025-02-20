@@ -43,3 +43,93 @@ html,body{
     display: flex;
     justify-content: center;
 }
+/* Add a smooth hover effect and shadow */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* On hover, increase size and add a deeper shadow */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure images have rounded corners */
+.card img {
+    border-radius: 10px;
+}
+
+/* Make card-body rounded */
+.card-body {
+    border-radius: 10px;
+}
+/* ===== Navbar Styling ===== */
+.navbar {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar brand (logo) hover effect */
+.navbar-brand img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+/* ===== Navbar Links Styling ===== */
+.navbar-nav .nav-item .nav-link {
+    font-weight: bold;
+    color: #333; /* Default text color */
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+    text-decoration: none; /* Remove underline by default */
+}
+
+/* Hover effect for navbar links */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #9b59b6 !important; /* Highlight color */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* ===== Dropdown Menu Styling ===== */
+.dropdown-menu {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Dropdown items hover effect */
+.dropdown-item {
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+    background: #9b59b6 !important;
+    color: white !important;
+    text-decoration: underline; /* Underline dropdown links on hover */
+}
+
+/* ===== Search Bar Styling ===== */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #9b59b6;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Search bar focus effect */
+.form-control:focus {
+    box-shadow: 0px 0px 8px rgba(155, 89, 182, 0.5);
+    border-color: #9b59b6;
+}
+
+/* Search Button Styling */
+.btn-outline-dark {
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover effect for search button */
+.btn-outline-dark:hover {
+    background: #9b59b6;
+    color: white;
+}
